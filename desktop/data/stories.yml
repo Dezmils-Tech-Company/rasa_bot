@@ -1,0 +1,145 @@
+version: "3.1"
+
+stories:
+- story: greet and ask for services
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_services_menu
+  - action: utter_ask_services_menu
+
+- story: greet and ask for software services
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_software_services
+  - action: utter_ask_software_services
+
+- story: greet and ask for KRA services
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_kra_services
+  - action: utter_ask_kra_services
+
+- story: greet and ask for cyber services
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_cyber_services
+  - action: utter_ask_cyber_services
+
+- story: greet and ask for installation services
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_installation_services
+  - action: utter_ask_installation_services
+
+- story: greet and ask for design services
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_design_services
+  - action: utter_ask_design_services
+
+- story: user provides name
+  steps:
+  - intent: provide_name
+  - action: utter_provide_name
+
+- story: user provides topic
+  steps:
+  - intent: provide_topic
+  - action: utter_provide_topic
+
+- story: user provides time
+  steps:
+  - intent: provide_time
+  - action: utter_provide_time
+
+- story: user asks about price
+  steps:
+  - intent: ask_price
+  - action: utter_ask_price
+
+- story: user asks about payment info
+  steps:
+  - intent: ask_payment_info
+  - action: utter_ask_payment_info
+
+- story: user asks for status update
+  steps:
+  - intent: ask_status_update
+  - action: utter_ask_status_update
+
+- story: user requests human agent
+  steps:
+  - intent: request_human_agent
+  - action: utter_request_human_agent
+
+- story: user has a complaint
+  steps:
+  - intent: complaint
+  - action: utter_complaint
+
+- story: user engages in smalltalk
+  steps:
+  - intent: bot_fallback_smalltalk
+  - action: utter_bot_fallback_smalltalk
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user affirms
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: user denies
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: conversation flow with follow-up
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_services_menu
+  - action: utter_ask_services_menu
+  - intent: affirm
+  - action: utter_affirm
+  - intent: ask_software_services
+  - action: utter_ask_software_services
+  - intent: thank_you
+  - action: utter_thank_you
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user provides name then asks about software
+  steps:
+  - intent: provide_name
+  - action: utter_provide_name
+  - intent: ask_software_services
+  - action: utter_ask_software_services
+
+- story: user asks status then provides reference
+  steps:
+  - intent: ask_status_update
+  - action: utter_ask_status_update
+  - intent: provide_name
+  - action: utter_provide_name
+
+- story: user complains then requests human
+  steps:
+  - intent: complaint
+  - action: utter_complaint
+  - intent: request_human_agent
+  - action: utter_request_human_agent

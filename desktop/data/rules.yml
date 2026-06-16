@@ -1,0 +1,107 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond to greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to thank_you
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- rule: Respond to affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Respond to deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Respond to ask_services_menu
+  steps:
+  - intent: ask_services_menu
+  - action: utter_ask_services_menu
+
+- rule: Respond to ask_software_services
+  steps:
+  - intent: ask_software_services
+  - action: utter_ask_software_services
+
+- rule: Respond to ask_kra_services
+  steps:
+  - intent: ask_kra_services
+  - action: utter_ask_kra_services
+
+- rule: Respond to ask_cyber_services
+  steps:
+  - intent: ask_cyber_services
+  - action: utter_ask_cyber_services
+
+- rule: Respond to ask_installation_services
+  steps:
+  - intent: ask_installation_services
+  - action: utter_ask_installation_services
+
+- rule: Respond to ask_design_services
+  steps:
+  - intent: ask_design_services
+  - action: utter_ask_design_services
+
+- rule: Respond to provide_name
+  steps:
+  - intent: provide_name
+  - action: utter_provide_name
+
+- rule: Respond to provide_topic
+  steps:
+  - intent: provide_topic
+  - action: utter_provide_topic
+
+- rule: Respond to provide_time
+  steps:
+  - intent: provide_time
+  - action: utter_provide_time
+
+- rule: Respond to ask_price
+  steps:
+  - intent: ask_price
+  - action: utter_ask_price
+
+- rule: Respond to ask_payment_info
+  steps:
+  - intent: ask_payment_info
+  - action: utter_ask_payment_info
+
+- rule: Respond to ask_status_update
+  steps:
+  - intent: ask_status_update
+  - action: utter_ask_status_update
+
+- rule: Respond to request_human_agent
+  steps:
+  - intent: request_human_agent
+  - action: utter_request_human_agent
+
+- rule: Respond to complaint
+  steps:
+  - intent: complaint
+  - action: utter_complaint
+
+- rule: Respond to bot_fallback_smalltalk
+  steps:
+  - intent: bot_fallback_smalltalk
+  - action: utter_bot_fallback_smalltalk
+
+- rule: Handle chitchat
+  steps:
+  - intent: bot_fallback_smalltalk
+  - action: utter_bot_fallback_smalltalk

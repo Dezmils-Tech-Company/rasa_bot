@@ -1,0 +1,491 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - Hello
+    - Hi
+    - good morning
+    - good morning 🌞
+    - Good morning
+    - good evening
+    - good afternoon
+    - Sasa
+    - Sasaa
+    - sasawa
+    - Sasawa
+    - niaje
+    - Niajee
+    - niaje sasa
+    - mambo
+    - mambo vipi
+    - vipi
+    - habari
+    - habari yako
+    - habari za asubuhi
+    - habari za mchana
+    - poa sana niaje
+    - poa sana niajee
+    - hello niajeee
+    - hey mamboo
+    - heyy sasa
+    - Heyyy
+    - hi unaweza nisaidia
+    - sasa unaeza nisaidia
+    - hello sir
+    - hello broo
+    - hello semaje
+    - we mzee
+    - mzee niko hapa
+    - shikamoo
+    - vipi mzee
+    - hi there
+    - hey there
+    - good day
+    - morning
+    - evening
+    - habari ya leo
+    - mambo vipi za leo
+    - hi tena
+    - niko hapa
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - bye bye
+    - see you
+    - see you later
+    - have a lovely day
+    - have a lovely day 😊
+    - ok bye
+    - acha nikuache sasa
+    - acha nikuache
+    - tutaongea
+    - tutaongea baadaye
+    - nitakuwa naondoka sasa
+    - sawa nitarudi baadaye
+    - asante kwa siku
+    - tutawasiliana
+    - tuendelee baadaye
+    - kwaheri
+    - kwaheri ya kuonana
+    - nikuwasiliane baadaye
+    - poa nitatoka kwa hii chat
+    - ok tutaongea kesho
+    - sawa basi tuendelee kesho
+    - fity tutaongea
+    - fity
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks so much
+    - thank you so much
+    - asante
+    - asante sana
+    - shukran
+    - shukran sana
+    - shukran alafu
+    - Thanks😁
+    - Thank you
+    - thanks a lot
+    - much appreciated
+    - nashukuru
+    - umenisaidia sana asante
+    - asante kwa msaada
+    - thanks for that
+    - we thank God 🙏🏾
+    - aki asante
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - yep
+    - ndio
+    - ndo
+    - ee
+    - eeh
+    - eee
+    - Ee namjua
+    - sawa
+    - Sawa
+    - sawasawa
+    - sawa sawa
+    - poa
+    - poa sana
+    - sure
+    - Sure
+    - okay
+    - ok
+    - okey
+    - haina shida
+    - hakuna noma
+    - kabisa
+    - kabisaa
+    - sahihi
+    - inafaa
+    - ni sawa
+    - bet
+    - true
+    - hiyo ni sawa
+    - niko nayo
+    - confirmed
+    - yes please
+    - ndio hivo
+    - na ndio
+    - sawa tu
+    - poa tuendelee
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - hapana
+    - apana
+    - sio hivo
+    - si hivyo
+    - zii
+    - zii kulikua na presentations
+    - sitaki
+    - sina hamu
+    - hapana asante
+    - sio ile
+    - haiwezi
+    - hakuna
+    - sina
+    - sina haja
+    - sio sahihi
+    - hio sio
+    - sio hivyo bro
+    - not really
+    - not yet
+    - sijapata
+    - bado
+    - bado sijapata
+    - sio leo
+    - sitaweza leo
+
+- intent: ask_services_menu
+  examples: |
+    - what services do you offer
+    - what do you do
+    - unafanya nini
+    - mnaoffer huduma gani
+    - mnafanya kazi gani
+    - what can you help me with
+    - how can you help me
+    - how may you help me
+    - niambie huduma zenu
+    - what services
+    - nataka kujua mnachofanya
+    - what's on the menu
+    - select an option
+    - show me the options
+    - niko na shida nataka msaada
+    - nataka kuongea na mtu
+    - I need help
+    - nataka msaada
+    - tafadhali nisaidie
+    - I have a question
+    - niko na swali
+    - nipe options
+    - what are my options
+    - what can you do for me
+    - menu tafadhali
+    - nionyeshe huduma zenu
+    - hii ni company gani
+    - who am i talking to
+    - what is dezmils tech
+
+- intent: ask_software_services
+  examples: |
+    - nataka website
+    - nataka kutengeneza website
+    - unaweza tengeneza website
+    - I need a website
+    - can you build me a website
+    - nahitaji mobile app
+    - I want a mobile app
+    - unaweza tengeneza app
+    - can you create an AI assistant
+    - nataka AI assistant kama hii
+    - software solution
+    - nahitaji software
+    - nataka kutengenezwa system
+    - unatengeneza systems
+    - can you develop an application
+    - I need a software developer
+    - unaweza nitengenezea app ya biashara
+    - nataka portal ya online
+    - tengeneza website ya biashara yangu
+    - how much for a website
+    - bei ya kutengeneza website
+    - unachaji how much for an app
+    - nataka chatbot kama hii
+    - unaweza nitengenezea bot
+    - nahitaji bot ya whatsapp
+    - tengeneza system ya shule
+    - I need an e-commerce website
+    - nataka online store
+
+- intent: ask_kra_services
+  examples: |
+    - nataka kufile kra returns
+    - file kra returns
+    - unaweza nifilia returns
+    - nahitaji kufile returns
+    - KRA returns
+    - file my returns
+    - nataka kufile zero returns
+    - help me file my taxes
+    - tax returns
+    - nisaidie kufile kra
+    - kra filing
+    - unachaji how much kufile returns
+    - bei ya kufile returns
+    - nataka kupata kra pin
+    - I need a KRA PIN
+    - kra pin registration
+    - unaweza nipatie kra pin
+    - file returns kabla deadline
+    - nataka kufile employment income returns
+    - tax filing services
+    - returns za mwaka huu
+
+- intent: ask_cyber_services
+  examples: |
+    - nataka kuprint
+    - I need printing
+    - printing services
+    - unaweza print hii document
+    - bei ya printing
+    - how much per page printing
+    - nataka kubind
+    - binding services
+    - nahitaji kubind project yangu
+    - online services
+    - unafanya cyber services
+    - nahitaji kutuma email
+    - nataka kufanya online application
+    - help me apply for helb
+    - apply helb
+    - nisaidie kuapply helb
+    - nataka kuapply kwa helb
+    - unaeza nisaidia kuapply
+    - nahitaji photocopy
+    - photocopying services
+    - nataka kuscan document
+    - nahitaji kuscan na kutuma
+    - nataka passport photo
+    - lamination services
+    - cv writing services
+    - nisaidie kuandika cv
+
+- intent: ask_installation_services
+  examples: |
+    - nataka kuinstall wifi
+    - wifi installation
+    - unaweza weka wifi kwangu
+    - nahitaji cctv
+    - cctv installation
+    - install cctv cameras
+    - unaweza weka cctv
+    - nataka dstv installation
+    - install dstv
+    - unaweza weka dstv
+    - bei ya kuinstall wifi
+    - how much for cctv installation
+    - nataka internet kwa nyumba
+    - install internet at home
+    - nahitaji fundi wa wifi
+    - mtu wa kuweka cctv
+    - unafanya installation za dstv na wifi
+
+- intent: ask_design_services
+  examples: |
+    - nataka poster
+    - tunaeza pata poster ya mothers day
+    - unaweza tengeneza poster
+    - nataka graphic design
+    - nahitaji logo
+    - unaezatengeneza logo kama hii
+    - tengeneza logo ya biashara
+    - I need a flyer designed
+    - nataka flyer
+    - design services
+    - unicreatie poster ya virtual session
+    - unaeza unda poster ya hii holiday
+    - nataka design ya banner
+    - bumper design
+    - design ya bumper ikoje
+    - nataka card za business
+    - business card design
+
+
+- intent: provide_name
+  examples: |
+    - my name is John
+    - jina langu ni Amos
+    - naitwa Beryl
+    - I am Sandie
+    - it's Hope
+    - call me Edu
+    - jina ni Martial
+    - mimi ni Sagimo
+    - name is Ivy Njoki
+    - reply with your name
+    - John Doe
+    - Jade Gesare
+    - Wainaina
+
+- intent: provide_topic
+  examples: |
+    - I want to discuss a website
+    - topic is about KRA returns
+    - nataka kuongea kuhusu printing
+    - I'd like to talk about installation services
+    - the topic is about a logo design
+    - kuhusu poster ya event
+    - about my business website
+    - regarding cctv installation
+    - about my taxes
+    - software development inquiry
+    - want to discuss app development
+    - kuhusu kufile returns
+
+- intent: provide_time
+  examples: |
+    - tomorrow 2pm
+    - Tomorrow 2pm
+    - next Monday 10am
+    - Next Monday 10am
+    - ASAP
+    - asap
+    - today afternoon
+    - kesho asubuhi
+    - kesho saa tatu
+    - leo jioni
+    - saa nane mchana
+    - this evening
+    - in the morning
+    - around 9am
+    - whenever you're available
+    - lini mtakua available
+    - when are you available
+    - any time today
+    - this weekend
+    - next week
+
+- intent: ask_price
+  examples: |
+    - how much is it
+    - how much does it cost
+    - bei ni gani
+    - ni how much
+    - unachaji how much
+    - gharama ni gani
+    - what's the price
+    - what's the cost
+    - pesa ni ngapi
+    - ni pesa ngapi
+    - how much for this
+    - what are your rates
+    - charges ni ngapi
+    - price list please
+    - nipe bei
+    - bei yake ni gani
+    - kiasi gani
+    - how much do you charge for a website
+    - how much do you charge for printing
+    - bei ya kufile kra returns ni gani
+
+- intent: ask_payment_info
+  examples: |
+    - how do I pay
+    - paybill number
+    - nipe paybill
+    - mpesa number
+    - send me your till number
+    - how can I send payment
+    - can I pay via mpesa
+    - nataka kulipa
+    - nimelipa
+    - nimetuma pesa
+    - payment imefika
+    - I've sent the deposit
+    - deposit ni ngapi
+    - do you accept mpesa
+    - nipe number ya kutumia pesa
+
+- intent: ask_status_update
+  examples: |
+    - any updates
+    - is it done
+    - imefika wapi
+    - umefika wapi na hiyo kazi
+    - is my order ready
+    - has it been completed
+    - umefanya yangu
+    - nataka kujua status
+    - what's the progress
+    - vipi imefikia wapi
+    - is the design ready
+    - poster iko ready
+    - umetengeneza ile poster
+    - imekamilika
+    - status ya order yangu
+
+- intent: request_human_agent
+  examples: |
+    - I want to talk to a human
+    - nataka kuongea na mtu
+    - connect me to a human0+
+    - continue to chat
+    - I want a real person
+    - put me through to someone
+    - nataka kuongea na supervisor
+    - connect to agent
+    - human agent please
+    - this bot is not helping
+    - nataka mtu sio bot
+
+- intent: complaint
+  examples: |
+    - this is taking too long
+    - hii inachukua time sana
+    - umenisumbua sana
+    - sijapata response
+    - hakuna anaereply
+    - I'm not happy with the service
+    - sina furaha na hii kazi
+    - kazi haijakamilika
+    - hii sio vile tulikubaliana
+    - hii poster sio sahihi
+    - kuna makosa kwa hii design
+    - nimepata makosa
+    - this is wrong
+    - that's not enough
+    - that's not what I asked for
+    - sio hivyo nilitaka
+
+- intent: bot_fallback_smalltalk
+  examples: |
+    - uko na jokes
+    - that's all
+    - that's not enough
+    - do you already have my name
+    - when are you available
+    - none
+    - None
+    - testing testing
+    - is this a bot
+    - ni bot ama mtu
+    - unablue tick ama ni bot
+    - can you chat like a human
+    - so unaweza chat na bot ichat

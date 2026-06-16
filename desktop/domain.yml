@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - affirm
+  - deny
+  - ask_services_menu
+  - ask_software_services
+  - ask_kra_services
+  - ask_cyber_services
+  - ask_installation_services
+  - ask_design_services
+  - provide_name
+  - provide_topic
+  - provide_time
+  - ask_price
+  - ask_payment_info
+  - ask_status_update
+  - request_human_agent
+  - complaint
+  - bot_fallback_smalltalk
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? I am Dezmils Tech bot. How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Bye! Have a great day."
+
+  utter_thank_you:
+  - text: "You're welcome! Is there anything else I can help you with?"
+
+  utter_affirm:
+  - text: "Great!"
+
+  utter_deny:
+  - text: "No problem."
+
+  utter_ask_services_menu:
+  - text: "We offer a variety of services including website development, mobile apps, software solutions, KRA tax filing, cyber services (printing, binding, etc.), installation services (WiFi, CCTV, DSTV), design services, and appointment booking. Which service are you interested in?"
+
+  utter_ask_software_services:
+  - text: "We can help you with website development, mobile apps, AI assistants, and custom software solutions. What kind of software solution are you looking for?"
+
+  utter_ask_kra_services:
+  - text: "We assist with KRA return filing, PIN registration, and other tax-related services. What specific KRA service do you need?"
+
+  utter_ask_cyber_services:
+  - text: "Our cyber services include printing, binding, photocopying, scanning, lamination, CV writing, and online application assistance. What do you need help with?"
+
+  utter_ask_installation_services:
+  - text: "We provide installation services for WiFi, CCTV cameras, and DSTV. What would you like us to install?"
+
+  utter_ask_design_services:
+  - text: "Our design services cover posters, logos, flyers, banners, business cards, and more. What design service do you require?"
+
+  utter_ask_price:
+  - text: "Our prices vary depending on the service and specifications. Could you please specify which service you're interested in so I can provide a detailed quote?"
+
+  utter_ask_payment_info:
+  - text: "We accept payments via M-Pesa. Please contact us for our paybill and till numbers. Would you like to proceed with payment?"
+
+  utter_ask_status_update:
+  - text: "I'd be happy to check the status of your request. Could you please provide your name or reference number?"
+
+  utter_request_human_agent:
+  - text: "Sure, let me connect you to a human agent. Please hold on..."
+
+  utter_complaint:
+  - text: "I'm sorry to hear that. Please provide more details about your concern so I can escalate it to the appropriate team."
+
+  utter_bot_fallback_smalltalk:
+  - text: "I'm here to help with Dezmils Tech services. If you have any questions about our offerings, feel free to ask!"
+
+  utter_provide_name:
+  - text: "Thanks for sharing your name! How can I assist you today?"
+
+  utter_provide_topic:
+  - text: "Got it, you'd like to discuss that topic. How can I help you with that?"
+
+  utter_provide_time:
+  - text: "Noted, you're available at that time. How can I assist you?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
